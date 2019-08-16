@@ -1,123 +1,156 @@
 // EXAMINE THE DOCUMENT OBJECT //
 
-//console.dir(document);
 //console.log(document.domain);
 //console.log(document.URL);
 //console.log(document.title);
+
+// document.title = 123
+
 //console.log(document.doctype);
 //console.log(document.head);
 //console.log(document.body);
 //console.log(document.all);
-//console.log(document.all[10]);
-//console.log(document.all[10].textContent = "Hello!"
+
+//console.log(document.all[10] = 'hello');
 
 //console.log(document.forms);
 //console.log(document.links);
-//console.log(document.images);
+//console.log(images);
+
 
 // GET ELEMENT BY ID //
 
+//console.log(document.getElementById('header-title'));
+
 //var headerTitle = document.getElementById('header-title');
+//var header =document.getElementById('main-header');
+//var main = document.getElementById('main');
+
 //console.log(headerTitle);
-//headerTitle.textContent = 'Hello';
-//headerTitle.innerText ='Goodbye';
-//console.log(headerTitle.textContent);
+
+
+//headerTitle.textContent = 'hello';
+
+
+//headerTitle.innerText = 'Goodbye';
+
 //console.log(headerTitle.innerText);
-//headerTitle.innerHTML = '<h2>Hello</h2>';
-//headerTitle.style.borderBottom = 'solid 3px #000';
+
+//headerTitle.innerHTML = '<h2>hello</h2>';
+
+//header.style.borderBottom = 'solid 3px #000';
+
+//main.style.backgroundColor = 'yellow';
+//main.style.border ='3px solid red';
+
 
 // GET ELEMENTS BY CLASS NAME //
-//var items = document.getElementsByClassName('list-group-item');
+
+var items = document.getElementsByClassName('list-group-item');
 //console.log(items);
 //console.log(items[1]);
-//items[1].textContent = 'Hello 2';
-//items[1].style.fontWeight = 'bold';
-//items[1].style.backgroundColor = 'yellow';
+//items[1].textContent = 'Jello 2';
+//items[1].style.
+//items[2].style.backgroundColor = 'green';
+//items[3].style.backgroundColor = 'brown';
+//items[3].style.textDecoration ='underline';
+//items[4].style.backgroundColor = 'indigo'
+//items[4].style.color = 'white';
+//items[4].style.border = '6px solid pink';
+//items[5].style.color = 'red';
+//items[5].style.fontStyle = 'italic';
+
+/* for(var i = 0; i < items.length; i++) {
+    items[i].style.backgroundColor = 'yellow';
+    items[i].style.color = 'red';
+    items[i].style.fontStyle = 'italic';
+    items[i].style.fontVariant = 'small-caps';
+} */
 
 
-//items[2].textContent = 'Bing Bong';
-//items[2].style.margin ='1rem 0';
-//items[2].style.backgroundColor= 'red';
-//[2].style.color = 'yellow';
-//items[2].style.fontStyle = 'italic';
-//items[2].style.letterSpacing = '0.2rem'
+// GET ELEMENTS BY TAG NAME //
 
-//var li = document.getElementsByTagName('li');
-//console.log(li);
-//console.log(li[1]);
-//li[1].textContent = 'hello 3';
-//li[1].style.fontWeight = 'bold';
-//li[1].style.border = '1px solid red';
+/*var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1])
 
+li[1].textContent = 'hello 2';
+li[1].style.fontweight = 'bold';
+li[2].style.backgroundColor = 'yellow';
 
-//for(var i = 0; i < li.length; i++)         {
- //   li[i].style.backgroundColor ='blue';
- //   li[i].style.color = 'white';
- //   }
+for(var i = 0; i < li.length; i++) {
+    items[i].style.backgroundColor = 'indigo';
+    items[i].style.color = 'white';
+    items[i].style.fontStyle ='italic';
+    items[i].style.fontVariant = 'small-caps';
+} */
 
+// QUERY SELECTOR //
 
- // QUERY SELECTOR //
+/* var header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 4px red';
+header.style.borderTop = '3px solid indigo';
 
-//var header = document.querySelector('#main-header');
-//header.style.borderBottom = 'solid 4px red';
+var input = document.querySelector('input');
+input.value = 'Jello Furld';
 
-//var input = document.querySelector('input');
-//input.value = 'hello world';
+var submit = document.querySelector('input[type="submit"]');
+submit.value = 'Send';
 
-//var submit = document.querySelector('input[type="submit"]');
-//submit.value = "send";
+var item = document.querySelector('.list-group-item');
+item.style.fontColor = '#000';
+item.style.fontStyle = 'italic';
 
-//var item = document.querySelector('.list-group-item:last-child');
-//item.style.color = 'blue';
-//item.style.backgroundColor = 'yellow';
+var lastItem = document.querySelector('.list-group-item:last-child');
+lastItem.style.color = 'violet';
 
-//var fourthItem = document.querySelector('.list-group-item:nth-child(4)');
-//fourthItem.style.color = 'pink';
-//fourthItem.style.backgroundColor = 'turquoise';
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.color = 'coral';
 
-//var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-//thirdItem.style.fontStyle = 'italic';
-//thirdItem.style.backgroundColor = 'red';
-//thirdItem.style.color = 'yellow';
+secondItem.style.fontStyle = 'italic';
 
-//var secondItem = document.querySelector('.list-group-item:nth-child(2)');
-//secondItem.style.color = 'coral';
-//secondItem.style.backgroundColor = 'beige';
+var fourthItem = document.querySelector('.list-group-item:nth-child(4)');
+
+fourthItem.style.color = 'green';
+fourthItem.style.fontVariant ='small-caps';
+fourthItem.style.fontStyle = 'italic';
+fourthItem.style.textShadow =' 2px 2px gold'
+
+var fifthItem = document.querySelector('.list-group-item:nth-child(5)');
+
+fifthItem.style.color = 'blue';
+fifthItem.style.textShadow = '2px 2px gold' */
 
 // QUERY SELECTOR ALL //
 
-//var titles = document.querySelectorAll('.title');
-//console.log(titles);
-//titles[0].textContent = 'hello';
+var titles = document.querySelectorAll('.title');
 
-//var odd = document.querySelectorAll('li:nth-child(odd)');
-//var even = document.querySelectorAll('li:nth-child(even)');
+console.log(titles);
+titles[0].textContent = 'hello';
+/* titles[0].style.color = 'gold';
+titles[0].styles.textShadow = '2px 2px black';
+titles[0].styles.fontWeight = 'bold';
 
-//for (var i = 0; i < odd.length; i++) {
-    //odd[i].style.backgroundColor = 'blue';
-    //odd[i].style.color = 'yellow';
-    //even[i].style.backgroundColor = 'red';
-    //even[i].style.color = 'white';
-//}
+titles[1].textContent = 'Bingy Bong';
+titles[1].style.color = 'violet';
+*/
 
+/* var odd = document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even');
+
+for(var i = 0; i < odd.length; i++) {
+    odd[i].style.backgroundColor = 'gold';
+}
+
+
+for(var i = 0; i < even.length; i++) {
+    even[i].style.backgroundColor = 'red';
+}
+*/
 
 // TRAVERSING THE DOM //
-var itemList = document.querySelector('#items')
 
-// Parent Node //
-
-console.log(itemList.parentNode);
-itemList.parentNode.style.backgroundColor = 'yellow';
-
-console.log(itemList.parentEleme.parentNode.parentNode);
-
-
-
-
-
-
-
-
-
-
-
+var x = 2;
+var y = 3;
+var z = x * y;
+console.log(z);
